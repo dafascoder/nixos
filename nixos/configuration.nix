@@ -130,7 +130,6 @@ hardware.nvidia = {
     #media-session.enable = true;
   };
 
-  environment.shells = with pkgs; [zsh];
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dafas = {
@@ -141,7 +140,6 @@ hardware.nvidia = {
       git
       _1password-gui
     ];
-    shell = pkgs.zsh;
   };
 
   # Enable automatic login for the user.
@@ -168,8 +166,9 @@ hardware.nvidia = {
     };
   };
 
-  programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+environment.shells = with pkgs; [ zsh ];
+programs.zsh.enable = true;
   
   system.stateVersion = "24.11"; # Did you read the comment?
 }
