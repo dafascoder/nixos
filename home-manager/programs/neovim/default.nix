@@ -1,68 +1,44 @@
 { pkgs, ... }:
-let
-
-  treesitterWithGrammars = (pkgs.vimPlugins.nvim-treesitter.withPlugins (p: [
-    p.bash
-    p.comment
-    p.css
-    p.dockerfile
-    p.fish
-    p.gitattributes
-    p.gitignore
-    p.go
-    p.gomod
-    p.gowork
-    p.hcl
-    p.javascript
-    p.jq
-    p.json5
-    p.json
-    p.lua
-    p.make
-    p.markdown
-    p.nix
-    p.python
-    p.rust
-    p.toml
-    p.typescript
-    p.vue
-    p.yaml
-  ]));
-
-  treesitter-parsers = pkgs.symlinkJoin {
-    name = "treesitter-parsers";
-    paths = treesitterWithGrammars.dependencies;
-  };
-in
 {
-  home.packages = with pkgs; [
-    lua-language-server
-  ];
+  home.sessionVariables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+  };
+
+  xdg.desktopEntries."nvim" = {
+    name = "NeoVim";
+    comment = "Edit text files";
+    icon = "nvim";
+    # xterm is a symlink and not actually xterm
+    exec = "xterm -e ${pkgs.neovim}/bin/nvim %F";
+    categories = [ "TerminalEmulator" ];
+    terminal = false;
+    mimeType = [ "text/plain" ];
+  };
 
   programs.neovim = {
     enable = true;
-    package = pkgs.neovim-unwrapped;
+    viAlias = true;
     vimAlias = true;
-    coc.enable = false;
+
+    withRuby = true;
     withNodeJs = true;
-    plugins = [
-      treesitterWithGrammars
+    withPython3 = true;
+
+    extraPackages = with pkgs; [
+      gnumake
+      cargo
+      gcc13
+      unzip
+      wget
+      curl
+      tree-sitter
+      luajitPackages.luarocks
+      python311Packages.pynvim
+      php82Packages.composer
+      python311Packages.pip
     ];
   };
 
-  home.file."./.config/nvim/" = {
-    source = ./nvim;
-    recursive = true;
-  };
-
-  home.file."./.config/nvim/lua/config/lazy.lua".text = ''
-    vim.opt.runtimepath:append("${treesitter-parsers}")
-  '';
-
-  # Treesitter is configured as a locally developed module in lazy.nvim
-  # we hardcode a symlink here so that we can refer to it in our lazy config
-  home.file."./.local/share/nvim/nix/nvim-treesitter/" = {
-    recursive = true;
-    source = treesitterWithGrammars;
-  };
+  xdg.configFile.nvim.source = ./nvim;
 }
