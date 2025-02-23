@@ -45,7 +45,6 @@
 programs.zsh = {
   enable = true;
   enableCompletion = true;
-  autosuggestions.enable = true;
   zplug = {
     enable = true;
     plugins = [
