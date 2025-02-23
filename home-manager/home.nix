@@ -9,6 +9,7 @@
   imports = [
     ./programs/neovim
     ./programs/starship
+    ./programs/tmux
   ];
 
 
@@ -24,6 +25,7 @@
     fzf
     zig
     obsidian
+    zoxide
   ];
   
 
