@@ -140,8 +140,19 @@ hardware.nvidia = {
       git
       _1password-gui
       openvpn
+      waybar
     ];
   };
+
+  # Define Hyprland
+  program.hyprland = {
+    enable = true;
+    nvidiaPatches = true;
+    xwayland.enable = true;
+  };
+
+
+
 
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
@@ -167,9 +178,14 @@ hardware.nvidia = {
     };
   };
 
+  environment.sessionVariables = {
+    WLR_NO_HARDWARE_CURSORS = "1";
+    NIXOS_OZONE_WL = "1";
+  };
+
   users.defaultUserShell = pkgs.zsh;
-environment.shells = with pkgs; [ zsh ];
-programs.zsh.enable = true;
+  environment.shells = with pkgs; [ zsh ];
+  programs.zsh.enable = true;
   
   system.stateVersion = "24.11"; # Did you read the comment?
 }
