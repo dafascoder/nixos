@@ -165,7 +165,8 @@ hardware.nvidia = {
     };
   };
 
-  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
+users.users.yourname.shell = pkgs.zsh;
   
   system.stateVersion = "24.11"; # Did you read the comment?
 }
