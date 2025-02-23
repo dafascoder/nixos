@@ -49,6 +49,7 @@ programs.zsh = {
     enable = true;
     plugins = [
       { name = "zsh-users/zsh-autosuggestions"; }
+      {name = "zsh-users/zsh-syntax-highlighting";}
   ]; 
  };
  shellAliases = {
