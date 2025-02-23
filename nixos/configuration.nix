@@ -130,6 +130,8 @@ hardware.nvidia = {
     #media-session.enable = true;
   };
 
+  environment.shells = with pkgs; [zsh];
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dafas = {
     isNormalUser = true;
