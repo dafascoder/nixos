@@ -10,6 +10,7 @@
     ./programs/neovim
     ./programs/starship
     ./programs/tmux
+    ./programs/hyprland
   ];
 
 
