@@ -132,7 +132,7 @@ hardware.nvidia = {
 
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.dafas = {
+  users.users.dafas ={
     isNormalUser = true;
     description = "dafas";
     extraGroups = [ "networkmanager" "wheel" ];
@@ -145,11 +145,7 @@ hardware.nvidia = {
   };
 
   # Define Hyprland
-  programs.hyprland = {
-    enable = true;
-    nvidiaPatches = true;
-    xwayland.enable = true;
-  };
+  programs.hyprland.enable = true;
 
 
 
