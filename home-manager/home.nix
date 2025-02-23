@@ -33,7 +33,6 @@
 
   programs.git = {
     enable = true;
-
     extraConfig = {
       user.name = "dafascoder";
       user.email = "shirwa256@gmail.com";

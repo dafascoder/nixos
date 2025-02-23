@@ -10,8 +10,7 @@
          success_symbol = "[➜](bold green)";
          error_symbol = "[➜](bold red)";
        };
-
-       package.disabled = true;
-    };
   };
+};
+
 }
