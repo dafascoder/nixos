@@ -145,12 +145,7 @@ hardware.nvidia = {
   };
 
   # Define Hyprland
-  program.hyprland = {
-    enable = true;
-    nvidiaPatches = true;
-    xwayland.enable = true;
-  };
-
+  program.hyprland.enable = true;
 
 
 
