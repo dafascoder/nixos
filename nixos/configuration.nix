@@ -164,6 +164,8 @@ hardware.nvidia = {
       PasswordAuthentication = false;
     };
   };
+
+  users.defaultUserShell = pkgs.zsh;
   
   system.stateVersion = "24.11"; # Did you read the comment?
 }
