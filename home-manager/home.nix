@@ -40,9 +40,6 @@
     };
   };
 
-  programs.zsh = {
-    enable = true;
-  };
 
 
   programs.ghostty.enable = true;
