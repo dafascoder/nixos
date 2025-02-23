@@ -139,6 +139,7 @@ hardware.nvidia = {
     packages = with pkgs; [
       git
       _1password-gui
+      openvpn
     ];
   };
 
