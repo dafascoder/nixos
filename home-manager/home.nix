@@ -13,7 +13,6 @@
   ];
 
 
-  # TODO: Set your username
   home = {
     username = "dafas";
     homeDirectory = "/home/dafas";

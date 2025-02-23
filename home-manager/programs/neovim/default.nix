@@ -26,6 +26,7 @@
     withPython3 = true;
 
     extraPackages = with pkgs; [
+      fd
       gnumake
       cargo
       gcc13

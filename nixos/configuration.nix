@@ -148,6 +148,10 @@ hardware.nvidia = {
   programs.hyprland.enable = true;
 
 
+  # Passwordless sudo
+  security.sudo.wheelNeedsPassword = false;
+
+
 
 
   # Enable automatic login for the user.
