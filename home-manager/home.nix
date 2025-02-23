@@ -44,7 +44,14 @@
 
 programs.zsh = {
   enable = true;
-
+  enableCompletion = true;
+  autosuggestions.enable = true;
+  zplug = {
+    enable = true;
+    plugins = [
+      { name = "zsh-users/zsh-autosuggestions"; }
+  ]; 
+ };
  shellAliases = {
     ll = "ls -l";
     update = "sudo nixos-rebuild switch --flake ~/.config/nixos-config/";
