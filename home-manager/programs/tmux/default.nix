@@ -2,7 +2,7 @@
 {
   programs.tmux = {
    enable = true;
-   shortcut = 'a';
+   shortcut = "a";
     newSession = true;
     # Stop tmux+escape craziness.
     escapeTime = 0;
