@@ -141,6 +141,7 @@ hardware.nvidia = {
       git
       _1password-gui
     ];
+    shell = pkgs.zsh;
   };
 
   # Enable automatic login for the user.
