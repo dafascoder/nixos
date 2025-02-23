@@ -167,7 +167,7 @@ hardware.nvidia = {
 
   programs.zsh.enable = true;
 users.users.dafas.shell = pkgs.zsh;
-users.users.dafas.useDefaultShell = true
+users.users.dafas.useDefaultShell = true;
   
   system.stateVersion = "24.11"; # Did you read the comment?
 }
