@@ -32,10 +32,10 @@
   };
 
   # Enable catppuccin theming for GTK apps.
-  catppuccin = {
-    gtk = {
-      enable = true;
-      gnomeShellTheme = true;
-    };
-  };
+  #catppuccin = {
+  # gtk = {
+  #     enable = true;
+  #   gnomeShellTheme = true;
+  # };
+  # };
 }
