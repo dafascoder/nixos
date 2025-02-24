@@ -141,6 +141,10 @@ hardware.nvidia = {
       _1password-gui
       openvpn
       waybar
+       hypridle
+    hyprlock
+    hyprpaper
+    hyprpicker
     ];
   };
 
