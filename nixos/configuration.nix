@@ -189,8 +189,7 @@ hardware.nvidia = {
   };
 
   fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.meslo-lg
+    fira-code 
     roboto
   ];
 
