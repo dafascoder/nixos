@@ -141,9 +141,13 @@ hardware.nvidia = {
       _1password-gui
       openvpn
       waybar
-      thunar
     ];
   };
+
+  # Define Folder
+  #
+   programs.thunar.enable = true;
+
 
   # Define Hyprland
   programs.hyprland.enable = true;
