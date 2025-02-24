@@ -33,7 +33,7 @@
     "hypr/hyprpaper.conf".text = ''
       splash = false
       preload = ${config.wallpaper}
-      wallpaper = ${config.wallpaper}
+      wallpaper =, ${config.wallpaper}
     '';
 
     "hypr/hypridle.conf".text = ''
