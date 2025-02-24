@@ -10,7 +10,6 @@
     ../../misc/xdg
     ../../programs/swappy
     ../../programs/wofi
-    ../../services/cliphist
     ../../services/kanshi
     ../../services/swaync
     ../../services/waybar
