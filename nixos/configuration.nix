@@ -141,6 +141,7 @@ hardware.nvidia = {
       _1password-gui
       openvpn
       waybar
+      thunar
     ];
   };
 
@@ -182,6 +183,13 @@ hardware.nvidia = {
     WLR_NO_HARDWARE_CURSORS = "1";
     NIXOS_OZONE_WL = "1";
   };
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.meslo-lg
+    roboto
+  ];
+
 
   users.defaultUserShell = pkgs.zsh;
   environment.shells = with pkgs; [ zsh ];
