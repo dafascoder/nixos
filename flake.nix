@@ -32,7 +32,10 @@
     nixosConfigurations = {
       # FIXME replace with your hostname
       nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
+        specialArgs = {inherit inputs outputs;
+          userConfig = "dafas";
+
+          };
         # > Our main nixos configuration file <
         modules = [./nixos/configuration.nix
 
