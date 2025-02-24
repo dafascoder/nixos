@@ -15,7 +15,7 @@
       size = 24;
     };
     font = {
-      name = "Roboto";
+      name = "Fira Code";
       size = 11;
     };
   };
