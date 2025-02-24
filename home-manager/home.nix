@@ -25,7 +25,6 @@
     zig
     obsidian
     zoxide
-    
   ];
   
 

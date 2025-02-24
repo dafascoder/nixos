@@ -208,7 +208,7 @@
     };
     style = ''
       * {
-        font-family: "JetBrainsMono Nerd Font";
+        font-family: "Fira Code";
         font-weight: bold;
         min-height: 0;
         font-size: 100%;

@@ -88,7 +88,7 @@
         text = cmd[update:1000] echo "<span>$(date '+%A, %d %B')</span>"
         color = rgba(255, 255, 255, 0.8)
         font_size = 15
-        font_family = JetBrains Mono Nerd Font Mono ExtraBold
+        font_family = Fira Code
         position = 0, -400
         halign = center
         valign = top
@@ -100,7 +100,7 @@
           text = cmd[update:1000] echo "<span>$(date '+%H:%M')</span>"
           color = rgba(255, 255, 255, 0.8)
           font_size = 120
-          font_family = JetBrains Mono Nerd Font Mono ExtraBold
+          font_family = Fira Code 
           position = 0, -400
           halign = center
           valign = top
@@ -112,7 +112,7 @@
         text = $LAYOUT
         color = rgba(255, 255, 255, 0.9)
         font_size = 10
-        font_family = JetBrains Mono Nerd Font Mono
+        font_family = Fira Code 
         position = 0, -175
         halign = center
         valign = center
@@ -145,7 +145,7 @@
         text = cmd[update:1000] echo "<span>$(date '+%A, %d %B')</span>"
         color = rgba(255, 255, 255, 0.8)
         font_size = 30
-        font_family = JetBrains Mono Nerd Font Mono ExtraBold
+      font_family = Fira Code
         position = 0, -400
         halign = center
         valign = top
