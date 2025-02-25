@@ -46,8 +46,7 @@
 
     "hypr/hyprlock.conf".text = ''
       background {
-          monitor =
-          path = ${config.wallpaper}
+         path = ${config.wallpaper}
           blur_passes = 3
           contrast = 0.8916
           brightness = 0.8172
@@ -63,7 +62,6 @@
 
       # DP-1 Conifg
       input-field {
-          monitor = DP-1
           size = 250, 60
           outline_thickness = 2
           dots_size = 0.2 # Scale of input-field height, 0.2 - 0.8
@@ -84,7 +82,6 @@
 
       # Date
       label {
-        monitor = DP-1
         text = cmd[update:1000] echo "<span>$(date '+%A, %d %B')</span>"
         color = rgba(255, 255, 255, 0.8)
         font_size = 15
@@ -96,7 +93,6 @@
 
       # Time
       label {
-          monitor = DP-1
           text = cmd[update:1000] echo "<span>$(date '+%H:%M')</span>"
           color = rgba(255, 255, 255, 0.8)
           font_size = 120
@@ -108,7 +104,6 @@
 
       # Keyboard layout
       label {
-        monitor = DP-1
         text = $LAYOUT
         color = rgba(255, 255, 255, 0.9)
         font_size = 10
@@ -120,7 +115,6 @@
 
       # eDP-1 Conifg
       input-field {
-          monitor = eDP-1
           size = 500, 120
           outline_thickness = 2
           dots_size = 0.2 # Scale of input-field height, 0.2 - 0.8
@@ -153,7 +147,6 @@
 
       # Time
       label {
-          monitor = eDP-1
           text = cmd[update:1000] echo "<span>$(date '+%H:%M')</span>"
           color = rgba(255, 255, 255, 0.8)
           font_size = 240

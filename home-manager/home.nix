@@ -25,6 +25,8 @@
     zig
     obsidian
     zoxide
+    pavucontrol
+    pulseaudio
   ];
   
 

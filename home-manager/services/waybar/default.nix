@@ -208,7 +208,7 @@
     };
     style = ''
       * {
-        font-family: "Fira Code";
+        font-family: "FiraCode";
         font-weight: bold;
         min-height: 0;
         font-size: 100%;

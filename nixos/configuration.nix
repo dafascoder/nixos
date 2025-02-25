@@ -148,6 +148,9 @@ hardware.nvidia = {
     ];
   };
 
+    hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true;
+
   # Define Folder
   #
    programs.thunar.enable = true;
@@ -170,7 +173,7 @@ hardware.nvidia = {
   # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
-
+services.blueman.enable = true;
   # Install firefox.
   programs.firefox.enable = true;
   
@@ -193,6 +196,9 @@ hardware.nvidia = {
   };
 
   fonts.packages = with pkgs; [
+    (nerdfonts.override {
+      fonts = ["FiraCode"];
+    })
     fira-code 
     roboto
   ];

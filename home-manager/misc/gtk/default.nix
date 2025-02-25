@@ -15,16 +15,11 @@
       size = 24;
     };
     font = {
-      name = "Fira Code";
+      name = "Roboto";
       size = 11;
     };
   };
 
   # Enable catppuccin theming for GTK apps.
-  #catppuccin = {
-  # gtk = {
-  #     enable = true;
-  #   gnomeShellTheme = true;
-  # };
-  # };
+
 }

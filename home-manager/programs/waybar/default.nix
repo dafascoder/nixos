@@ -19,7 +19,6 @@
           "cpu"
           "temperature"
           "memory"
-          "backlight"
         ];
 
         modules-center = [
@@ -34,50 +33,9 @@
           "bluetooth"
           "pulseaudio"
           "pulseaudio#microphone"
-          "battery"
         ];
 
-        backlight = {
-          interval = 2;
-          align = 0;
-          rotate = 0;
-          format = "{icon} {percent}%";
-          format-icons = ["󰃞" "󰃟" "󰃝" "󰃠"];
-          icon-size = 10;
-          on-scroll-up = "brightnessctl set +5%";
-          on-scroll-down = "brightnessctl set 5%-";
-          smooth-scrolling-threshold = 1;
-        };
-
-        battery = {
-          interval = 60;
-          align = 0;
-          rotate = 0;
-          full-at = 100;
-          design-capacity = false;
-          states = {
-            good = 95;
-            warning = 30;
-            critical = 20;
-          };
-          format = "<big>{icon}</big>  {capacity}%";
-          format-charging = " {capacity}%";
-          format-plugged = " {capacity}%";
-          format-full = "{icon} Full";
-          format-alt = "{icon} {time}";
-          format-icons = [
-            ""
-            ""
-            ""
-            ""
-            ""
-          ];
-          format-time = "{H}h {M}min";
-          tooltip = true;
-          tooltip-format = "{timeTo} {power}w";
-        };
-
-        bluetooth = {
+       bluetooth = {
           format = "";
           format-connected = " {num_connections}";
           tooltip-format = " {device_alias}";
@@ -208,7 +166,7 @@
     };
     style = ''
       * {
-        font-family: "JetBrainsMono Nerd Font";
+        font-family: "FiraCode";
         font-weight: bold;
         min-height: 0;
         font-size: 100%;
@@ -270,8 +228,6 @@
         border-radius: 3px;
       }
 
-      #backlight,
-      #battery,
       #bluetooth,
       #clock,
       #cpu,

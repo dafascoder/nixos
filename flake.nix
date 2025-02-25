@@ -7,6 +7,9 @@
 
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+      # Global catppuccin theme
+    catppuccin.url = "github:catppuccin/nix";
+
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
@@ -22,6 +25,7 @@
     self,
     nixpkgs,
     home-manager,
+    catppuccin,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -38,7 +42,6 @@
           };
         # > Our main nixos configuration file <
         modules = [./nixos/configuration.nix
-
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
