@@ -69,8 +69,10 @@
         };
 
         "hyprland/language" = {
-          format = "{short}";
+          format = " {}";
+           format-en =  "EN (US)";        
         };
+
 
         "hyprland/workspaces" = {
           all-outputs = true;
