@@ -10,6 +10,7 @@
     ./programs/starship
     ./programs/tmux
     ./programs/hyprland
+    ./programs/vscode
   ];
 
 

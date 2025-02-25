@@ -146,10 +146,12 @@ hardware.nvidia = {
     hyprpaper
     hyprpicker
         networkmanagerapplet
+     yewtube
+      vlc
     ];
   };
 
-    hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true;
 
   # Define Folder
@@ -163,7 +165,6 @@ hardware.nvidia = {
 
   # Passwordless sudo
   security.sudo.wheelNeedsPassword = false;
-
 
 
 
