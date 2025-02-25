@@ -110,13 +110,12 @@
           interval = 1;
         };
 
-          "hyprland/language" =  {
-    "format": " {}",
-    "format-en": "EN (US)",       
-          }
+        "hyprland/language" = {
+         format = "{}";
+         format-en = "US"; 
+        };
 
         "hyprland/workspaces" = {
-        
           all-outputs = true;
           format = "{name}";
           on-click = "activate";

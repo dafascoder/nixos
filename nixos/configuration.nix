@@ -145,6 +145,7 @@ hardware.nvidia = {
     hyprlock
     hyprpaper
     hyprpicker
+        networkmanagerapplet
     ];
   };
 

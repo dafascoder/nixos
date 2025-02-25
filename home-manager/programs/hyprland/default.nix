@@ -135,11 +135,10 @@
 
       # Date
       label {
-        monitor = eDP-1
         text = cmd[update:1000] echo "<span>$(date '+%A, %d %B')</span>"
         color = rgba(255, 255, 255, 0.8)
         font_size = 30
-      font_family = Fira Code
+      font_family = FiraCode
         position = 0, -400
         halign = center
         valign = top
@@ -158,11 +157,10 @@
 
       # Keyboard layout
       label {
-        monitor = eDP-1
         text = $LAYOUT
         color = rgba(255, 255, 255, 0.9)
         font_size = 20
-        font_family = JetBrains Mono Nerd Font Mono
+        font_family = FiraCode 
         position = 0, -230
         halign = center
         valign = center

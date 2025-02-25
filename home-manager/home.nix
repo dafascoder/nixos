@@ -24,10 +24,14 @@
     fzf
     zig
     obsidian
-    zoxide
     pavucontrol
     pulseaudio
   ];
+
+  programs.zoxide = {
+    enable = true;
+    enableZshIntegration = true;
+   };
   
 
   # Enable home-manager and git
@@ -57,6 +61,9 @@ programs.zsh = {
     ll = "ls -l";
     update = "sudo nixos-rebuild switch --flake ~/.config/nixos-config/";
   };
+  initExtra = ''
+    eval "$(zoxide init zsh)" 
+  '';
   history.size = 10000;
 };
 
