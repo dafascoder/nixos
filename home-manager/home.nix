@@ -27,6 +27,9 @@
     obsidian
     pavucontrol
     pulseaudio
+    nodejs_20
+    pnpm
+    godot3
   ];
 
   programs.zoxide = {

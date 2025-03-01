@@ -135,7 +135,7 @@ hardware.nvidia = {
   users.users.dafas ={
     isNormalUser = true;
     description = "dafas";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
       git
       _1password-gui
@@ -148,15 +148,21 @@ hardware.nvidia = {
         networkmanagerapplet
      yewtube
       vlc
+      docker
     ];
   };
 
   hardware.bluetooth.enable = true; # enables support for Bluetooth
   hardware.bluetooth.powerOnBoot = true;
-
+virtualisation.docker.enable = true;
   # Define Folder
   #
    programs.thunar.enable = true;
+  services.gvfs.enable = true;
+
+   programs.nix-ld.enable = true;
+
+
 
 
   # Define Hyprland
